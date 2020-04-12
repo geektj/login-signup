@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/signUpForm.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+    <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="text">Sign Up</div>
+            <form action="">
+                <div class="inputbox">
+                    <label>First Name <span>*</span></label>
+                    <input type="text" value="" placeholder="First Name here" required>
+                </div>
+                <div class="inputbox">
+                    <label>Last Name<span>*</span></label>
+                    <input type="text" value="" placeholder="Last Name" required>
+                </div>
+                <div class="inputbox">
+                    <label>Username</label>
+                    <input type="text" value="" placeholder="Username" required>
+                </div>
+                <div class="inputbox">
+                    <label>email<span>*</span></label>
+                    <input type="email" value="" placeholder="Email" required>
+                </div>
+                <div class="inputbox flex-inner">
+                    <label>gender<span>*</span></label>
+                    <input type="radio" name="gender" value="male" checked>
+                    <label for="male" class="radiobtn">male</label>
+                    <input type="radio" name="gender" value="female" >
+                    <label for="female" class="radiobtn">female</label>
+                    <input type="radio" name="gender" value="others" >
+                    <label for="others" class="radiobtn">others</label>
+                </div>
+                <div class="inputbox">
+                    <label>password</label>
+                    <input type="password" value="" placeholder="" required>
+                </div>
+                <div class="inputbox">
+                    <label>confirm password</label>
+                    <input type="password" value="" placeholder="" required>
+                </div>
+                <button class="btn">submit</button> 
+                <div class="login">Already have an account ?<a href="./login_Form.html" target="_blank"> Login here</a></div>   
+            </form>    
+        </div>
+    </div>
+    
+</body>
+</html>
