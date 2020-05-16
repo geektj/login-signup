@@ -10,28 +10,30 @@
     rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous"/>
+    <script src="./JS/index.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="box">
             <div class="text">Sign Up</div>
-            <form action="">
+            <div id="errormessage"></div>
+            <!-- <form action=""> -->
                 <div class="inputbox">
                     <label>First Name <span>*</span></label>
-                    <input type="text" value="" placeholder="First Name here" required>
+                    <input type="text" value="" placeholder="First Name here" id="fname" required>
                 </div>
                 <div class="inputbox">
                     <label>Last Name<span>*</span></label>
-                    <input type="text" value="" placeholder="Last Name" required>
+                    <input type="text" value="" placeholder="Last Name" id="lname"  required>
                 </div>
                 <div class="inputbox">
                     <label>Username</label>
-                    <input type="text" value="" placeholder="Username" required>
+                    <input type="text" value="" placeholder="Username" id="uname" required>
                 </div>
                 <div class="inputbox">
                     <label>email<span>*</span></label>
-                    <input type="email" value="" placeholder="Email" required>
+                    <input type="email" value="" placeholder="Email" id="email" required>
                 </div>
                 <div class="inputbox flex-inner">
                     <label>gender<span>*</span></label>
@@ -44,13 +46,13 @@
                 </div>
                 <div class="inputbox">
                     <label>password</label>
-                    <input type="password" value="" placeholder="" required>
+                    <input type="password" value="" placeholder="" id="pass" required>
                 </div>
                 <div class="inputbox">
                     <label>confirm password</label>
-                    <input type="password" value="" placeholder="" required>
+                    <input type="password" value="" placeholder="" id="confpass" required>
                 </div>
-                <button class="btn">submit</button> 
+                <button class="btn" onclick="signup()">submit</button> 
                 <div class="login">Already have an account ?<a href="./login_Form.html" target="_blank"> Login here</a></div>   
             </form>    
         </div>
